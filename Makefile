@@ -1,3 +1,5 @@
+VERSION=`cat VERSION`
+
 .PHONY: docker
 docker: docker-build docker-publish
 
