@@ -17,7 +17,7 @@ Usage:
 ------
 
 ```bash
-$ docker run --rm repejota/alpine-python3 python3 -c 'print("Foo bar")'
+$ docker run --rm repejota/docker-alpine-python3 python3 -c 'print("Foo bar")'
 ```
 
 **NOTE:** `pip`/`pip3` is also available in this image.
