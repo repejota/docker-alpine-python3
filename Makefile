@@ -3,13 +3,13 @@ docker: docker-build docker-publish
 
 .PHONY: docker-build
 docker-build:	## Builds container and tag resulting image
-	docker build --force-rm --tag repejota/alpine-python3 .
-	docker tag repejota/alpine-python3 repejota/alpine-python3:$(VERSION)
+	docker build --force-rm --tag repejota/docker-alpine-python3 .
+	docker tag repejota/docker-alpine-python3 repejota/docker-alpine-python3:$(VERSION)
 
 .PHONY: docker-publish
 docker-publish:	## Publishes container image
-	docker push repejota/alpine-python3:$(VERSION)
-	docker push repejota/alpine-python3:latest
+	docker push repejota/docker-alpine-python3:$(VERSION)
+	docker push repejota/docker-alpine-python3:latest
 
 .PHONY: help
 help:	## Show this help
