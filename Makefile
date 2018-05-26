@@ -13,6 +13,4 @@ docker-publish:	## Publishes container image
 	docker push repejota/docker-alpine-python3:$(VERSION)
 	docker push repejota/docker-alpine-python3:latest
 
-.PHONY: help
-help:	## Show this help
-	@fgrep -h "##" $(MAKEFILE_LIST) | fgrep -v fgrep | sed -e 's/\\$$//' | sed -e 's/##//'
+include Makefile.help.mk
